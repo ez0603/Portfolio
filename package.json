@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ez0603.github.io/",
   "name": "ez0603.github.io",
   "version": "0.1.0",
   "private": true,
@@ -60,7 +61,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
-  "homepage": "https://ez0603.github.io/"
+    "gh-pages": "^3.2.3"
+  }
+  
 }
