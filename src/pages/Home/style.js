@@ -22,5 +22,5 @@ export const container = css`
 export const content = css`
   width: 90%;
   height: 100%;
-  background-color: orange;
+  /* background-color: orange; */
 `;

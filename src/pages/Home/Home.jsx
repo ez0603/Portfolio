@@ -6,7 +6,7 @@ function Home(props) {
 		<div css={s.layout}>
 			<div css={s.container}>
 				<div css={s.content}>
-					fsdffsd
+					fsdffsdd
 				</div>
 			</div>
 		</div>
