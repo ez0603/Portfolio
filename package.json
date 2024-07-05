@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
     "apexcharts": "^3.49.1",
     "axios": "^1.7.2",
     "date-fns": "^3.6.0",
@@ -61,8 +62,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
-     "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
+    "gh-pages": "^3.2.3"
   },
   "engines": {
     "node": ">=20.11.1"

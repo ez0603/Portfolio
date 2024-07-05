@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 
 export const layout = css`
   position: relative;
-  width: 100%; //모니터 기준
+  width: 100%;
   height: 93vh;
   background-color: #ecc7c7;
   display: flex;
@@ -22,5 +22,12 @@ export const container = css`
 export const content = css`
   width: 90%;
   height: 100%;
-  /* background-color: orange; */
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    font-size: 200px;
+  }
 `;
