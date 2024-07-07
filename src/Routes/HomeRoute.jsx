@@ -1,6 +1,6 @@
 // HomeRoute.js
 import React from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import ProfileMain from '../pages/ProfileMain/ProfileMain';
 import Home from '../pages/Home/Home';
 import Project from '../pages/Project/Project';
