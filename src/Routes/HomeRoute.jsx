@@ -11,7 +11,7 @@ import Header from '../components/Header/Header';
 
 function HomeRoute(props) {
   return (
-    <Router>
+    <>
       <Routes>
         <Route
           path="/Portfolio/Home"
@@ -47,7 +47,7 @@ function HomeRoute(props) {
           }
         />
       </Routes>
-    </Router>
+    </>
   );
 }
 
