@@ -1,31 +1,34 @@
+/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
 export const layout = css`
-  position: fixed;
-  width: 100%;
-  height: 7%;
-  top: 0;
-  background-color: #dbdbdb;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-export const container = css`
-width: 90%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* background-color: aqua; */
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 20px;
 `;
 
 export const link = css`
-width: 20%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  & a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff5a5f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    &:nth-of-type(2) {
+      background-color: #f8e71c;
+    }
+  }
 `;

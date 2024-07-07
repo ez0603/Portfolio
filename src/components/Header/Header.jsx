@@ -4,9 +4,8 @@ import * as s from "./style";
 
 function Header(props) {
   return (
-    <div css={s.layout}>
-      <div css={s.container}>
-        이모티콘
+    <div>
+      <div css={s.layout}>
         <div css={s.link}>
           <Link to="/">Home</Link>
           <Link to="/Profile">Profile</Link>

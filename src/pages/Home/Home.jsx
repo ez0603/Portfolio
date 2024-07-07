@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import * as s from "./style";
-import { Global } from "@emotion/react";
 import "animate.css";
 
 function Home(props) {
