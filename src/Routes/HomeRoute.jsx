@@ -14,7 +14,7 @@ function HomeRoute(props) {
     <>
       <Routes>
         <Route
-          path="/Portfolio/Home"
+          path="/Portfolio/"
           element={
             <>
             <HomeHeader/>
