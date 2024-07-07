@@ -18,7 +18,6 @@ export const layout = css`
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
-  padding-top: 64px;
 `;
 
 export const container = css`

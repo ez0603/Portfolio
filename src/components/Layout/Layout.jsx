@@ -2,13 +2,13 @@
 import * as s from "./style";
 
 function Layout({children}) {
-	return (
-		<div css={s.layout}>
+  return (
+    <div css={s.layout}>
       <div css={s.container}>
-      {children}
+        {children}
       </div>
     </div>
-	);
+  );
 }
 
 export default Layout;

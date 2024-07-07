@@ -16,7 +16,7 @@ export const link = css`
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 20%;
+  right: 4%;
   top: 50%;
   transform: translateY(-50%);
   & a {

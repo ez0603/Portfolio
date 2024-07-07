@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 
 export const layout = css`
   position: relative;
-  width: 50%;
+  width: 85%;
   height: 90%;
   border: 1px solid #dbdbdb;
   border-radius: 10px;
@@ -13,6 +13,19 @@ export const layout = css`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 70px;
+  overflow: hidden; /* 자식 요소가 컨테이너를 벗어나지 않도록 */
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #dbdbdb; /* 중앙 선 색상 */
+    z-index: 3; /* 가상 요소의 z-index 설정 */
+  }
 `;
 
 export const container = css`
@@ -22,5 +35,6 @@ export const container = css`
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: aqua;
+  z-index: 1; /* 자식 요소의 z-index 설정 */
+  /* background-color: aqua; */
 `;

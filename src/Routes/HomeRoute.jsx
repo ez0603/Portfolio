@@ -1,6 +1,5 @@
-// HomeRoute.js
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ProfileMain from '../pages/ProfileMain/ProfileMain';
 import Home from '../pages/Home/Home';
 import Project from '../pages/Project/Project';
@@ -11,16 +10,16 @@ import Header from '../components/Header/Header';
 
 function HomeRoute(props) {
   return (
-    <>
+    <Router>
       <Routes>
         <Route
           path="/"
           element={
             <>
-            <HomeHeader/>
-            <HomeLayout>
-              <Home />
-            </HomeLayout>
+              <HomeHeader />
+              <HomeLayout>
+                <Home />
+              </HomeLayout>
             </>
           }
         />
@@ -28,10 +27,10 @@ function HomeRoute(props) {
           path="/Profile"
           element={
             <>
-            <Header />
-            <Layout>
-              <ProfileMain />
-            </Layout>
+              <Header />
+              <Layout>
+                <ProfileMain />
+              </Layout>
             </>
           }
         />
@@ -39,15 +38,15 @@ function HomeRoute(props) {
           path="/Project"
           element={
             <>
-            <Header />
-            <Layout>
-              <Project />
-            </Layout>
+              <Header />
+              <Layout>
+                <Project />
+              </Layout>
             </>
           }
         />
       </Routes>
-    </>
+    </Router>
   );
 }
 
