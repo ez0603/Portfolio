@@ -25,7 +25,7 @@ function HomeRoute() {
       <div className="flipbook-container">
         <HTMLFlipBook
           width={isExpanded ? 90 * window.innerWidth / 100 : 45 * window.innerWidth / 100}  // 가로 크기 변경
-          height={95 * window.innerHeight / 100}  // 세로 크기 변경
+          height={95 * window.innerHeight /100}  // 세로 크기 변경
           size="stretch"
           minWidth={315}
           maxWidth={2200}

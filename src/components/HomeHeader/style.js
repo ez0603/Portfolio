@@ -19,16 +19,22 @@ export const link = css`
   right: 3%;
   top: 25%;
   transform: translateY(-50%);
-  & a {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 5px 0;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    background-color: #ff5a5f;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    &:nth-of-type(2) {
-      background-color: #f8e71c;
-    }
+`;
+
+export const button = css`
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  background-color: #ff5a5f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  &:nth-of-type(2) {
+    background-color: #f8e71c;
+  }
+  &:hover {
+    opacity: 0.8;
   }
 `;
