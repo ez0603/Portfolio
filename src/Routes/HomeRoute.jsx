@@ -1,6 +1,6 @@
 // HomeRoute.js
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Router, Routes } from 'react-router-dom';
 import ProfileMain from '../pages/ProfileMain/ProfileMain';
 import Home from '../pages/Home/Home';
 import Project from '../pages/Project/Project';
@@ -11,7 +11,7 @@ import Header from '../components/Header/Header';
 
 function HomeRoute(props) {
   return (
-    <>
+    <Router>
       <Routes>
         <Route
           path="/Portfolio/Home"
@@ -47,7 +47,7 @@ function HomeRoute(props) {
           }
         />
       </Routes>
-    </>
+    </Router>
   );
 }
 
