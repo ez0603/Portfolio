@@ -5,7 +5,7 @@ export const layout = css`
   position: relative;
   width: 100%;
   height: 100vh; /* Adjust height to fit the viewport */
-  background-color: #fff;
+  background-color: #396bf5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +13,9 @@ export const layout = css`
 `;
 
 export const container = css`
-  width: 80%;
+  width: 100%;
   height: 80%; /* Adjust height to fit the content */
-  background-color: #fff;
+  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ export const content = css`
 
 export const text = css`
   font-family: 'RixInooAriDuriR', sans-serif;
-  font-size: 135px; /* Adjust font-size to be responsive */
+  font-size: 120px; /* Adjust font-size to be responsive */
   color: #FF7777;
   display: flex;
   align-items: center;

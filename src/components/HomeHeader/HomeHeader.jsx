@@ -1,15 +1,14 @@
 /** @jsxImportSource @emotion/react */
-import { Link } from "react-router-dom";
 import * as s from "./style";
 
-function HomeHeader(props) {
+function HomeHeader({ onNavigate }) {
   return (
-    <div>
+    <div className="home-header">
       <div css={s.layout}>
         <div css={s.link}>
-          <Link to="/Portfolio/">Home</Link>
-          <Link to="/Profile">Profile</Link>
-          <Link to="/Project">Project</Link>
+          <a onClick={() => onNavigate(0)} style={{ cursor: 'pointer' }}>Home</a>
+          <a onClick={() => onNavigate(1)} style={{ cursor: 'pointer' }}>Profile</a>
+          <a onClick={() => onNavigate(4)} style={{ cursor: 'pointer' }}>Project</a>
         </div>
       </div>
     </div>

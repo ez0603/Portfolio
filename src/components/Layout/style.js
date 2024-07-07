@@ -3,8 +3,8 @@ import { css } from "@emotion/react";
 
 export const layout = css`
   position: relative;
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border: 1px solid #dbdbdb;
   border-radius: 10px;
   box-shadow: 

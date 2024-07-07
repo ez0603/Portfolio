@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+}/* App.css */
+.flipbook-container {
+  height: 90vh;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book {
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.demoPage {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cover {
+  background-color: #297dcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 90%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.inner-page {
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-page .left, .inner-page .right {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
 }
