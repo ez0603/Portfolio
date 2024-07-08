@@ -12,7 +12,7 @@ export const layout = css`
 
 export const header = css`
   width: 50%;
-  height: 6%; /* 헤더 높이 */
+  height: 5%; /* 헤더 높이 */
   background-color: black; /* 아이폰 상단 바 배경색 */
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ export const content = css`
 
 export const time = css`
 position: relative;
-top: -40px;
+top: -30px;
 width: 95%;
 display: flex;
 align-items: center;
@@ -49,4 +49,11 @@ export const img = css`
   align-items: center;
   justify-content: center;
   margin-bottom: 20%;
+`;
+
+export const icon = css`
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 24%;
 `;

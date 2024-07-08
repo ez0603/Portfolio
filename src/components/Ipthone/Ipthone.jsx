@@ -13,10 +13,10 @@ function Ipthone(props) {
         <div css={s.header}></div>
         <div css={s.time}>
           <CurrentTime />
-		  <div>
-
-		  <TbAntennaBars5 size={20} /> <FaWifi size={20} /> <CiBatteryFull size={20} />
-		  </div>
+          <div css={s.icon}>
+            <TbAntennaBars5 size={30} /> <FaWifi size={20} />
+            <CiBatteryFull size={25} />
+          </div>
         </div>
         <div css={s.img}>
           <img src={Image} alt="" />

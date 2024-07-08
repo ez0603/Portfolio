@@ -1,18 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import { useState } from "react";
 import * as s from "./style";
 import Ipthone from "../../components/Ipthone/Ipthone";
 
 function Profile(props) {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    const email = "dlwldjs31232@naver.com";
-    navigator.clipboard.writeText(email).then(() => {
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 2000);
-    });
-  };
 
   return (
     <div css={s.layout}>
@@ -34,7 +24,7 @@ function Profile(props) {
           </div>
           <div css={s.produce}>
             <h3>Email</h3>
-            <p>dlwldjs3132@navber.com</p>
+            <p>dlwldjs3132@naver.com</p>
           </div>
           <div css={s.Education}>
             <h3>Education</h3>
