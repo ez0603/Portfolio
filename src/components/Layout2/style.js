@@ -1,6 +1,4 @@
-/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-
 
 export const layout = css`
   position: relative;
@@ -22,7 +20,7 @@ export const container = css`
   flex-direction: column;
   align-items: center;
   width: 90%;
-  height: 90%;
+  height: 100%;
   border-radius: 10px;
   z-index: 1; /* 자식 요소의 z-index 설정 */
   background-color: white; /* 확인을 위해 백그라운드 컬러 추가 */

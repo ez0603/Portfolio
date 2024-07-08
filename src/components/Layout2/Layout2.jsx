@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
 import * as s from "./style";
 
 function Layout2({children}) {

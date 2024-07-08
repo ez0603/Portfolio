@@ -1,15 +1,4 @@
-import { css, keyframes } from "@emotion/react";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import { css } from "@emotion/react";
 
 export const layout = css`
   position: relative;
