@@ -121,8 +121,31 @@ export const copiedMessage = css`
 
 
 export const produceLayout = css`
-  background-color: red;
+  /* background-color: red; */
   width: 40%;
   height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  & h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+`;
+
+export const produce = css`
+/* background-color: aqua; */
+padding: 0 20px;
+
+`;
+
+export const Education = css`
+/* background-color: aqua; */
+padding: 0 20px;
+
+& p {
+  font-size: 13px;
+}
 `;
 

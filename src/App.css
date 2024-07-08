@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }.flipbook-container {
-  height: 90vh;
+  height: 100%;
   width: 85vw;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
 }
 
 .cover {
-  background-color: #297dcc;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

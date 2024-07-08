@@ -5,9 +5,10 @@ function HomeHeader({ onNavigate }) {
   return (
     <div className="home-header" css={s.layout}>
       <div css={s.link}>
-        <button onClick={() => onNavigate(0)} css={s.button}>Home</button>
-        <button onClick={() => onNavigate(1)} css={s.button}>Profile</button>
-        <button onClick={() => onNavigate(4)} css={s.button}>Project</button>
+        <button onClick={() => onNavigate(0)} css={s.button}>HOME</button>
+        <button onClick={() => onNavigate(1)} css={s.button}>PROFILE</button>
+        <button onClick={() => onNavigate(4)} css={s.button}>ABOUT ME</button>
+        <button onClick={() => onNavigate(4)} css={s.button}>PROJECT</button>
       </div>
     </div>
   );

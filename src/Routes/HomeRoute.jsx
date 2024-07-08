@@ -22,7 +22,7 @@ function HomeRoute() {
   };
 
   return (
-    <div>
+    <div >
       <HomeHeader onNavigate={handleNavigation} />
       <div className="flipbook-container">
         <HTMLFlipBook

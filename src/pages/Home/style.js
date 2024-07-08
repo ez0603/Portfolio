@@ -5,7 +5,7 @@ export const layout = css`
   position: relative;
   width: 100%;
   height: 100vh; /* Adjust height to fit the viewport */
-  background-color: #396bf5;
+  /* background-color: #396bf5; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@ export const layout = css`
 
 export const container = css`
   width: 100%;
-  height: 80%; /* Adjust height to fit the content */
+  height: 100%; /* Adjust height to fit the content */
   background-color: #f5f5f5;
   display: flex;
   align-items: center;

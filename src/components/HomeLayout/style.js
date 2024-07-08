@@ -22,5 +22,5 @@ export const layout = css`
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: #fff;
 `;
