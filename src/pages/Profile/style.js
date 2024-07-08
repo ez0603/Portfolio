@@ -36,34 +36,7 @@ export const background = css`
 
   & img {
     width: 100%;
-    border-radius: 25px;
     height: 100%;
-    opacity: 0.5;
-  }
-`;
-
-export const img = css`
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 27.5%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: end;
-
-  & img {
-    border-radius: 40px;
-    width: 35%;
-    height: 20%;
-  }
-
-  & h3 {
-    font-weight: 700;
-    color: white;
-    margin-top: 10px;
   }
 `;
 

@@ -1,9 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { useState } from "react";
 import * as s from "./style";
-import backImage from "../../assets/img/background.jpg";
-import { MdMailOutline } from "react-icons/md";
-import Image from "../../assets/img/file.jpg";
+import Ipthone from "../../components/Ipthone/Ipthone";
 
 function Profile(props) {
   const [isCopied, setIsCopied] = useState(false);
@@ -21,20 +19,7 @@ function Profile(props) {
       <div css={s.container}>
         <div css={s.aboutMe}>
           <div css={s.background}>
-            <img src={backImage} alt="" />
-          </div>
-          <div css={s.img}>
-            <img src={Image} alt="" />
-            <h3>이지언</h3>
-            <div css={s.messageBox}>
-              <MdMailOutline
-                size={50}
-                color="white"
-                onClick={handleCopyEmail}
-              />
-              <p>Email</p>
-              {isCopied && <p css={s.copiedMessage}>Coppy !</p>}
-            </div>
+            <Ipthone/>
           </div>
         </div>
         <div css={s.produceLayout}>
