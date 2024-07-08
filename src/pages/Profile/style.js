@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 export const layout = css`
   position: relative;
   width: 100%;
-  height: 93vh;
+  height: 100%;
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
@@ -15,7 +15,6 @@ export const container = css`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: aqua; */
 `;
 
 export const aboutMe = css`
@@ -24,7 +23,6 @@ export const aboutMe = css`
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  /* background-color: orange; */
 `;
 
 export const background = css`
@@ -58,8 +56,8 @@ export const img = css`
 
   & img {
     border-radius: 40px;
-    width: 150px;
-    height: 150px;
+    width: 35%;
+    height: 20%;
   }
 
   & h3 {
@@ -119,7 +117,6 @@ export const copiedMessage = css`
   }
 `;
 
-
 export const produceLayout = css`
   /* background-color: red; */
   width: 40%;
@@ -127,6 +124,7 @@ export const produceLayout = css`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden; /* 추가 */
 
   & h1 {
     margin: 0;
@@ -135,17 +133,19 @@ export const produceLayout = css`
 `;
 
 export const produce = css`
-/* background-color: aqua; */
-padding: 0 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 30%; 
 
 `;
 
 export const Education = css`
-/* background-color: aqua; */
-padding: 0 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%; 
+  overflow-y: auto;
 
-& p {
-  font-size: 13px;
-}
+  & p {
+    font-size: 13px;
+  }
 `;
-
