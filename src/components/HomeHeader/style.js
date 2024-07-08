@@ -23,8 +23,8 @@ export const link = css`
 
 export const button = css`
   text-decoration: none;
-  padding: 10px 20px;
-  margin: 5px 0;
+  padding: 20px 30px;
+  margin: 10px 0; /* 간격을 좀 더 넓게 설정 */
   color: white;
   border-radius: 0 5px 5px 0;
   background-color: #ff5a5f;

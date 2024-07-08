@@ -7,6 +7,8 @@ import HomeLayout from '../components/HomeLayout/HomeLayout';
 import Layout from '../components/Layout/Layout';
 import HomeHeader from '../components/HomeHeader/HomeHeader';
 import '../App.css'; // CSS 파일 임포트
+import Profile from '../pages/Profile/Profile';
+import Layout2 from '../components/Layout2/Layout2';
 
 function HomeRoute() {
   const bookRef = useRef();
@@ -44,13 +46,13 @@ function HomeRoute() {
           </div>
           <div className="demoPage inner-page">
             <Layout>
-              <ProfileMain />
+              <Profile />
             </Layout>
           </div>
           <div className="demoPage inner-page">
-            <Layout>
+            <Layout2>
               <ProfileMain />
-            </Layout>
+            </Layout2>
           </div>
           <div className="demoPage inner-page">
             <Layout>
@@ -58,9 +60,9 @@ function HomeRoute() {
             </Layout>
           </div>
           <div className="demoPage inner-page">
-            <Layout>
+            <Layout2>
               <Project />
-            </Layout>
+            </Layout2>
           </div>
         </HTMLFlipBook>
       </div>
