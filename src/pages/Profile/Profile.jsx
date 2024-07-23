@@ -1,41 +1,63 @@
 /** @jsxImportSource @emotion/react */
 import * as s from "./style";
-import Ipthone from "../../components/Ipthone/Ipthone";
+import Image from "../../assets/img/me.jpg";
+import { MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
-function Profile(props) {
-
+function Profile() {
   return (
     <div css={s.layout}>
       <div css={s.container}>
-        <div css={s.aboutMe}>
-          <div css={s.background}>
-            <Ipthone/>
+        <div css={s.header}>
+          <div css={s.personalInfoLayout}>
+            <h1>이지언</h1>
+            <div css={s.personalInfo}>
+            <div css={s.iconText}>
+                <MdEmail fontSize={20} />
+                <span>dlwldjs3132@naver.com</span>
+              </div>
+              <div css={s.iconText}>
+                <FaGithub fontSize={20} />
+                <span>https://github.com/ez0603</span>
+              </div>
+            </div>
+          </div>
+          <div css={s.profileImage}>
+            <img src={Image} alt="" />
           </div>
         </div>
-        <div css={s.produceLayout}>
-          <h1>RESUME</h1>
-          <div css={s.produce}>
-            <h3>Name</h3>
-            <p>이지언</p>
+        <div css={s.sectionLayout}>
+          <div css={s.section}>
+            <h2>학력사항</h2>
+            <div css={s.row}>
+              <div css={s.label}>2018.03 ~ 2023.02</div>
+              <div css={s.value}>
+                <p>동의대학교</p>
+                <p>로봇공학과</p>
+              </div>
+            </div>
+            <div css={s.row}>
+              <div css={s.label}>2015.03 ~ 2018.02</div>
+              <div css={s.value}>
+                <p>삼정고등학교</p>
+                <p>이과 (자연계열)</p>
+              </div>
+            </div>
           </div>
-          <div css={s.produce}>
-            <h3>Birth Date</h3>
-            <p>1999.06.03</p>
-          </div>
-          <div css={s.produce}>
-            <h3>Email</h3>
-            <p>dlwldjs3132@naver.com</p>
-          </div>
-          <div css={s.Education}>
-            <h3>Education</h3>
-            <span>2018</span>
-            <p>동의대학교 기계자동차로봇부품공학부 입학</p>
-            <span>2023</span>
-            <p>동의대학교 로봇공학과 졸업</p>
-            <span>2024.12 ~ 2024.05</span>
-            <p>빅데이터 AI기반 헬스케어 플랫폼 개발 과정 수료</p>
-            <span>2024.12 ~ 2024.07</span>
-            <p>웹프론트엔드 과정 수료</p>
+          <div css={s.section}>
+            <h2>교육사항</h2>
+            <div css={s.row}>
+              <div css={s.label}>2024.12 ~ 2024.05</div>
+              <div css={s.value}>
+                <p>빅데이터 AI기반 헬스케어 플랫폼 개발 과정 수료</p>
+              </div>
+            </div>
+            <div css={s.row}>
+              <div css={s.label}>2024.12 ~ 2024.07</div>
+              <div css={s.value}>
+                <p>웹프론트엔드 과정 수료</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

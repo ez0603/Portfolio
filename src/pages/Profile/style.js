@@ -7,118 +7,120 @@ export const layout = css`
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 export const container = css`
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
-
-export const aboutMe = css`
-  width: 50%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-`;
-
-export const background = css`
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
+  max-width: 800px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+`;
 
-  & img {
+export const header = css`
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+`;
+
+export const personalInfoLayout = css`
+  h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+`;
+
+export const iconText = css`
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  gap: 10px;
+`;
+
+export const personalInfo = css`
+  padding-left: 15px;
+  border-left: 2px solid #ccc;
+
+  p {
+    background-color: aqua;
+    margin: 5px 0;
+    display: flex; 
+    align-items: center;
+  }
+`;
+
+export const profileImage = css`
+  width: 150px;
+  height: 190px;
+  margin-left: 20px;
+  margin-top: 10px;
+  img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
 `;
 
-export const messageBox = css`
-  box-sizing: border-box;
-  background-color: transparent;
+export const sectionLayout = css`
   width: 100%;
-  height: 20%;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid #fff;
+  height: 100%;
+  background-color: #F5F4EB;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
-  color: white;
-  position: relative;
-  cursor: pointer;
+  /* justify-content: center; */
 `;
-
-export const copiedMessage = css`
-  box-sizing: border-box;
-  color: white;
-  font-size: 14px;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: black;
-  text-align: center;
-  font-size: 20px;
-  border-radius: 10px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: inline-block;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-  }
-
-  &.show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+export const section = css`
+  width: 90%;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
   }
 `;
 
-export const produceLayout = css`
-  /* background-color: red; */
-  width: 40%;
-  height: 90%;
+export const row = css`
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow: hidden; /* 추가 */
-
-  & h1 {
-    margin: 0;
-    font-size: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  &:last-of-type {
+    margin-bottom: 0;
   }
 `;
 
-export const produce = css`
-  padding: 0 20px;
-  width: 100%;
-  height: 30%; 
-
+export const label = css`
+  flex: 1;
+  font-weight: bold;
+  color: #555;
 `;
 
-export const Education = css`
-  padding: 0 20px;
-  width: 100%;
-  height: 100%; 
-  overflow-y: auto;
-
-  & p {
-    font-size: 13px;
+export const value = css`
+  flex: 2;
+  color: #333;
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 0;
   }
 `;
