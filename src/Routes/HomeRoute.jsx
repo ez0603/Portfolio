@@ -12,7 +12,7 @@ import AboutMe from '../pages/AboutMe/AboutMe';
 
 function HomeRoute() {
   const bookRef = useRef(null);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded] = useState(false);
 
   useEffect(() => {
     if (bookRef.current) {
