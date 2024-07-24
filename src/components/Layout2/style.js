@@ -7,7 +7,7 @@ export const layout = css`
   /* border: 1px solid #dbdbdb; */
   /* border-radius: 10px; */
   box-shadow: 
-  inset 30px 0 35px -20px rgba(0, 0, 0, 0.2), /* 왼쪽에만 안쪽 그림자 */
+  inset 30px 0 30px -20px rgba(0, 0, 0, 0.2), /* 왼쪽에만 안쪽 그림자 */
   0 2px 30px 10px rgba(0, 0, 0, 0.2); /* 기존 바깥쪽 그림자 */
   display: flex;
   align-items: center;

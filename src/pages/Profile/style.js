@@ -77,8 +77,8 @@ box-sizing: border-box;
   height: 100%;
   background-color: #F5F4EB;
   padding: 30px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
