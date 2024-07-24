@@ -15,7 +15,7 @@ export const layout = css`
 export const container = css`
   width: 100%;
   height: 100%; /* Adjust height to fit the content */
-  background-color: #f5f5f5;
+  background-color: #ECE5E1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ export const content = css`
 export const text = css`
   font-family: 'RixInooAriDuriR', sans-serif;
   font-size: 120px; /* Adjust font-size to be responsive */
-  color: #FF7777;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +67,7 @@ export const text = css`
   span:nth-of-type(6) { animation-delay: 0.5s; }
   span:nth-of-type(7) { animation-delay: 0.6s; }
   span:nth-of-type(8) { animation-delay: 0.7s; }
+  span:nth-of-type(9) { animation-delay: 0.8s; }
 
   @keyframes bounce {
     100% {
