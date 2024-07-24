@@ -10,12 +10,12 @@ const fadeIn = keyframes`
     transform: translateY(0);
   }
 `;
-
 export const layout = css`
   position: relative;
   width: 100%;
   height: 100%;
-  /* background-color: #f5f5f5; */
+  padding-left: 10px;
+  /* background-color: #f5f5f5; */ 
   display: flex;
   align-items: center;
   justify-content: center;
