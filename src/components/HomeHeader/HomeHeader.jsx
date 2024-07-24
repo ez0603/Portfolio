@@ -7,8 +7,8 @@ function HomeHeader({ onNavigate }) {
       <div css={s.link}>
         <button onClick={() => onNavigate(0)} css={s.button}>HOME</button>
         <button onClick={() => onNavigate(1)} css={s.button}>PROFILE</button>
-        <button onClick={() => onNavigate(4)} css={s.button}>ABOUT ME</button>
-        <button onClick={() => onNavigate(4)} css={s.button}>PROJECT</button>
+        <button onClick={() => onNavigate(3)} css={s.button}>ABOUT ME</button>
+        <button onClick={() => onNavigate(5)} css={s.button}>PROJECT</button>
       </div>
     </div>
   );
