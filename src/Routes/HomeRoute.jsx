@@ -5,7 +5,6 @@ import Home from '../pages/Home/Home';
 import Project from '../pages/Project/Project';
 import HomeLayout from '../components/HomeLayout/HomeLayout';
 import Layout from '../components/Layout/Layout';
-import HomeHeader from '../components/HomeHeader/HomeHeader';
 import '../App.css'; // CSS 파일 임포트
 import Profile from '../pages/Profile/Profile';
 import Layout2 from '../components/Layout2/Layout2';
