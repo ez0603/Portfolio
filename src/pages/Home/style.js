@@ -34,7 +34,7 @@ export const layout = css`
 export const container = css`
   width: 100%;
   height: 100%;
-  background-color: #424242;
+  background-color: #212842;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +77,7 @@ export const subheading = css`
 
   span {
     font-family: "SF_HambakSnow", sans-serif;
-    color: #F4CF00;
+    color: #E6D7C4;
     font-size: 18px;
     font-weight: 400;
   }
@@ -88,7 +88,7 @@ export const text = css`
   height: 70%;
   font-family: "SF_HambakSnow", sans-serif;
   font-size: 100px;
-  color: #F4CF00;
+  color: #E6D7C4;
   position: relative;
   text-align: center;
   border-radius: 50%;
@@ -124,7 +124,7 @@ export const nameLayout = css`
   width: 100%;
   height: 80%;
   font-size: 50px;
-  color: #F4CF00;
+  color: #E6D7C4;
   display: flex;
   flex-direction: column;
   align-items: center;

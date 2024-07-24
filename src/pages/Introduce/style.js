@@ -29,8 +29,8 @@ export const cursor = css`
 `;
 
 export const highlight = css`
-  background-color: yellow; /* 배경 색상 설정 */
+  background-color: #212842; /* 배경 색상 설정 */
   border-radius: 5px; /* 둥근 모서리 설정 */
   padding: 0 5px; /* 여백 추가 */
-  /* color: red;  */
+  color: #E6D7C4; 
 `;
