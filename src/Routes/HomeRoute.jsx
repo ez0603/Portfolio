@@ -28,21 +28,6 @@ function HomeRoute() {
     }
   }, []);
 
-  const handleNavigation = (page) => {
-    if (bookRef.current) {
-      console.log('페이지로 이동 중:', page);
-      const flipInstance = bookRef.current.pageFlip();
-      if (flipInstance) {
-        flipInstance.flip(page, { duration: 0 });
-        setIsExpanded(page !== 0);
-      } else {
-        console.log('pageFlip 인스턴스를 사용할 수 없음');
-      }
-    } else {
-      console.log('bookRef.current가 설정되지 않음');
-    }
-  };
-
   return (
     <div>
       <div className="flipbook-container">
