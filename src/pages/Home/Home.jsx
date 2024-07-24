@@ -21,7 +21,7 @@ function Home(props) {
           </h1>
 
           <div css={s.nameLayout}>
-            <p></p>
+            <p>배움의 자세로 성장하는 웹 개발자</p>
             <span>LEE JIEON</span>
           </div>
         </div>
