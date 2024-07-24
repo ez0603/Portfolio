@@ -10,6 +10,8 @@ export const layout = css`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+
+  
 `;
 
 export const container = css`
