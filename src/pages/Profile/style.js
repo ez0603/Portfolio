@@ -67,7 +67,7 @@ export const profileImage = css`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 `;
 

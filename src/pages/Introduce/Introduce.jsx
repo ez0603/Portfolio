@@ -3,7 +3,7 @@ import  { useState, useEffect } from 'react';
 import * as s from "./style";
 
 function Introduce() {
-  const content = "안녕하세요\n웹 개발자 이지언입니다";
+  const content = "안녕하세요 \n신입 웹 개발자 이지언입니다.";
   const [displayText, setDisplayText] = useState('');
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
