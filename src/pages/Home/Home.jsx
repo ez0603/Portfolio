@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import * as s from "./style";
 import "animate.css";
-import { FaFolder } from "react-icons/fa";
 
 function Home(props) {
   return (
