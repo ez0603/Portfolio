@@ -1,28 +1,35 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
+export const fontFace = css`
+  @font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+`;
+
 export const layout = css`
+  ${fontFace}  /* Include fontFace here to ensure it is applied */
   position: relative;
   width: 100%;
-  height: 100vh; /* Adjust height to fit the viewport */
-  /* background-color: #396bf5; */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-
-  
+  /* border-radius: 10px; */
 `;
 
 export const container = css`
   width: 100%;
-  height: 100%; /* Adjust height to fit the content */
-  background-color: #ECE5E1;
+  height: 100%;
+  background-color: #445268;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  overflow: hidden; /* Ensure content does not overflow */
+  /* border-radius: 10px; */
+  overflow: hidden;
 `;
 
 export const content = css`
@@ -36,54 +43,20 @@ export const content = css`
 `;
 
 export const text = css`
-  font-family: 'RixInooAriDuriR', sans-serif;
-  font-size: 120px; /* Adjust font-size to be responsive */
-  color: #000000;
+  font-family: 'SF_HambakSnow', sans-serif;
+  font-size: 120px;
+  color: #ECE5E1;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Allow text to wrap within the container */
+  flex-wrap: wrap;
   text-align: center;
 
   span {
     position: relative;
-    top: 0; /* Reset top position */
+    top: 0;
     display: inline-block;
-    animation: bounce 1.2s ease infinite alternate;
-    text-shadow: 0 1px 0 #CCC,
-                 0 2px 0 #CCC,
-                 0 3px 0 #CCC,
-                 0 4px 0 #CCC,
-                 0 5px 0 #CCC,
-                 0 6px 0 transparent,
-                 0 7px 0 transparent,
-                 0 8px 0 transparent,
-                 0 9px 0 transparent,
-                 0 10px 10px rgba(0, 0, 0, 0.4);
-  }
 
-  span:nth-of-type(2) { animation-delay: 0.1s; }
-  span:nth-of-type(3) { animation-delay: 0.2s; }
-  span:nth-of-type(4) { animation-delay: 0.3s; }
-  span:nth-of-type(5) { animation-delay: 0.4s; }
-  span:nth-of-type(6) { animation-delay: 0.5s; }
-  span:nth-of-type(7) { animation-delay: 0.6s; }
-  span:nth-of-type(8) { animation-delay: 0.7s; }
-  span:nth-of-type(9) { animation-delay: 0.8s; }
-
-  @keyframes bounce {
-    100% {
-      top: -20px;
-      text-shadow: 0 1px 0 #CCC,
-                   0 2px 0 #CCC,
-                   0 3px 0 #CCC,
-                   0 4px 0 #CCC,
-                   0 5px 0 #CCC,
-                   0 6px 0 #CCC,
-                   0 7px 0 #CCC,
-                   0 8px 0 #CCC,
-                   0 9px 0 #CCC,
-                   0 50px 25px rgba(0, 0, 0, 0.2);
-    }
   }
+  
 `;

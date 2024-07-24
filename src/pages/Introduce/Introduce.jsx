@@ -18,12 +18,11 @@ function Introduce() {
           setIndex(index - 1);
         }, 100); // Speed of deleting
       } else {
-        // 완전히 삭제 완료 후, 초기화
         timer = setTimeout(() => {
-          setDisplayText(''); // 남은 모든 텍스트 제거
-          setIndex(0); // 초기화
-          setIsDeleting(false); // 타이핑 모드로 전환
-        }, 1000); // 다음 타이핑 전 대기 시간
+          setDisplayText(''); // Clear all text
+          setIndex(0); // Reset index
+          setIsDeleting(false); // Switch to typing mode
+        }, 1000); // Pause before restarting
       }
     } else {
       if (index < content.length) {
@@ -34,7 +33,7 @@ function Introduce() {
       } else {
         timer = setTimeout(() => {
           setIsDeleting(true);
-        }, 2000); // 삭제 전 대기 시간
+        }, 2000); // Delay before deleting
       }
     }
 
@@ -43,7 +42,10 @@ function Introduce() {
 
   return (
     <div css={s.layout}>
-      <div css={s.introduce} dangerouslySetInnerHTML={{ __html: displayText.replace(/\n/g, '<br/>') + '<span class="cursor">|</span>' }} />
+      <div css={s.introduce}>
+        <span dangerouslySetInnerHTML={{ __html: displayText.replace(/\n/g, '<br/>') }} />
+        <span css={s.cursor}>|</span>
+      </div>
     </div>
   );
 }

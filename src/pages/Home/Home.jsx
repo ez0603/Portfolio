@@ -18,7 +18,6 @@ function Home(props) {
             <span>I</span>
             <span>O</span>
           </h1>
-         
         </div>
       </div>
     </div>

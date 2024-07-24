@@ -13,12 +13,11 @@ export const layout = css`
 export const container = css`
   width: 100%;
   height: 100%;
-  max-width: 800px;
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  /* padding: 20px; */
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -73,6 +72,7 @@ export const profileImage = css`
 `;
 
 export const sectionLayout = css`
+box-sizing: border-box;
   width: 100%;
   height: 100%;
   background-color: #F5F4EB;

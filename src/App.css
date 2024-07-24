@@ -56,8 +56,7 @@
 }
 
 .demoPage {
-  background: white;
-  border: 1px solid #ccc;
+  background-color: white;
   box-sizing: border-box;
 }
 
@@ -69,25 +68,23 @@
   font-size: 24px;
   width: 100%; /* 90%에서 100%로 변경 */
   height: 100%; /* 높이 추가 */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-weight: bold;
   box-sizing: border-box; /* 추가 */
   margin-top: -20px;
 }
 
 .inner-page {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   width: 100%;
   height: 100%;
   padding: 0; /* 패딩 제거 */
   box-sizing: border-box; /* 추가 */
-  margin-top: -20px;
 }
 
 .inner-page .left, .inner-page .right {
   width: 50%;
   padding: 0; /* 패딩 제거 */
   box-sizing: border-box; /* 추가 */
-  margin-top: -20px;
 }
