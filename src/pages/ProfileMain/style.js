@@ -53,6 +53,7 @@ export const skillLayout = css`
   h1 {
     margin-left: 35px;
     font-size: 36px;
+    cursor: default;
   }
 `;
 
@@ -69,9 +70,7 @@ export const skillBox = css`
   &.visible {
     opacity: 1;
   }
-  /* background-color: aqua; */
 
-  /* 미디어 쿼리 추가 */
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 20px;
@@ -80,7 +79,7 @@ export const skillBox = css`
 
 export const skillCategory = css`
   box-sizing: border-box;
-  border: 1px solid #dbdbdb;
+  border: 2px solid #dbdbdb;
   width: 100%;
   height: auto;
   padding: 25px;

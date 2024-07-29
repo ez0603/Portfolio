@@ -77,7 +77,7 @@ export const subheading = css`
 
   span {
     font-family: "SF_HambakSnow", sans-serif;
-    color: #E6D7C4;
+    color: #e6d7c4;
     font-size: 18px;
     font-weight: 400;
   }
@@ -88,15 +88,16 @@ export const text = css`
   height: 70%;
   font-family: "SF_HambakSnow", sans-serif;
   font-size: 100px;
-  color: #E6D7C4;
+  color: #e6d7c4;
   position: relative;
   text-align: center;
   border-radius: 50%;
   background-color: transparent;
-  z-index: 0; /* 부모 요소가 자식 요소보다 앞에 오도록 설정 */
+  z-index: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
 
   /* &::before {
     content: "";
@@ -117,14 +118,13 @@ export const text = css`
     mask-composite: exclude;
     z-index: -1; 
   } */
-
 `;
 
 export const nameLayout = css`
   width: 100%;
   height: 80%;
   font-size: 50px;
-  color: #E6D7C4;
+  color: #e6d7c4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,6 +135,5 @@ export const nameLayout = css`
     color: white;
     margin: 0;
   }
-
-
+  cursor: default;
 `;

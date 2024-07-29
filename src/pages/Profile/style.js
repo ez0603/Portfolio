@@ -41,8 +41,22 @@ export const personalInfoLayout = css`
 export const iconText = css`
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  justify-content: space-between;
+  margin: 15px 0;
   gap: 10px;
+`;
+
+export const copy = css`
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  &:hover {
+    background-color: #dbdbdb;
+  }
 `;
 
 export const personalInfo = css`
@@ -52,7 +66,7 @@ export const personalInfo = css`
   p {
     background-color: aqua;
     margin: 5px 0;
-    display: flex; 
+    display: flex;
     align-items: center;
   }
 `;
@@ -71,18 +85,16 @@ export const profileImage = css`
 `;
 
 export const sectionLayout = css`
-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: #F5F4EB;
+  background-color: #f5f4eb;
   padding: 30px;
-  /* border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 `;
+
 export const section = css`
   width: 90%;
   margin-bottom: 20px;

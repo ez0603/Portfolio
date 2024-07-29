@@ -3,8 +3,25 @@ import * as s from "./style";
 import Image from "../../assets/img/me.jpg";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
 
 function Profile() {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch((err) => console.error("Error copying text: ", err));
+  };
+
+  const handleContextMenu = (e) => {
+    e.preventDefault(); // 우클릭 메뉴 비활성화
+  };
+
   return (
     <div css={s.layout}>
       <div css={s.container}>
@@ -12,18 +29,33 @@ function Profile() {
           <div css={s.personalInfoLayout}>
             <h1>이지언</h1>
             <div css={s.personalInfo}>
-            <div css={s.iconText}>
+              <div css={s.iconText}>
                 <MdEmail fontSize={20} />
                 <span>dlwldjs3132@naver.com</span>
+                <button
+                  onClick={() => copyToClipboard("dlwldjs3132@naver.com")}
+                  css={s.copy}
+                >
+                  Copy
+                </button>
               </div>
               <div css={s.iconText}>
                 <FaGithub fontSize={20} />
                 <span>https://github.com/ez0603</span>
+                <button
+                  onClick={() => copyToClipboard("https://github.com/ez0603")}
+                  css={s.copy}
+                >
+                  Copy
+                </button>
               </div>
+              {copied && (
+                <div style={{ color: "green", marginTop: "10px" }}>Copied!</div>
+              )}
             </div>
           </div>
-          <div css={s.profileImage}>
-            <img src={Image} alt="" />
+          <div css={s.profileImage} onContextMenu={handleContextMenu}>
+            <img src={Image} alt="" onContextMenu={handleContextMenu}/>
           </div>
         </div>
         <div css={s.sectionLayout}>

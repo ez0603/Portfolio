@@ -2,13 +2,13 @@
 import { css, keyframes } from "@emotion/react";
 
 const fadeIn = keyframes`
-  from {
+   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px); 
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); 
   }
 `;
 
@@ -36,8 +36,22 @@ export const header = css`
   }
 
   b {
+    display: inline-block;
     font-size: 43px;
+    animation: ${fadeIn} 1s ease-in-out; 
+    animation-fill-mode: forwards;
   }
+
+  b:nth-of-type(1) { animation-delay: 0s; }
+  b:nth-of-type(2) { animation-delay: 0.2s; }
+  b:nth-of-type(3) { animation-delay: 0.4s; }
+  b:nth-of-type(4) { animation-delay: 0.6s; }
+  b:nth-of-type(5) { animation-delay: 0.8s; }
+  b:nth-of-type(6) { animation-delay: 1s; }
+  b:nth-of-type(7) { animation-delay: 1.2s; }
+  b:nth-of-type(8) { animation-delay: 1.4s; }
+  b:nth-of-type(9) { animation-delay: 1.6s; }
+  b:nth-of-type(10) { animation-delay: 1.8s; }
 `;
 
 export const container = css`
@@ -94,7 +108,7 @@ export const text = css`
   flex-direction: column;
   justify-content: space-around;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #f5f4eb;
   cursor: default;
 

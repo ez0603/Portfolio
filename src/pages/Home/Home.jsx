@@ -10,9 +10,6 @@ function Home(props) {
           <div css={s.subheadingLayout}>
           </div>
             <div css={s.subheading}>
-              {/* <p>
-              <FaFolder size={150} color="white" />
-            </p> */}
               <span>DEVELOPER POTOFOLIO</span>
             </div>
           <h1 css={s.text}>
