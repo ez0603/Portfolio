@@ -4,7 +4,6 @@ export const layout = css`
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +92,8 @@ export const section = css`
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
   }
+
+  cursor: default;
 `;
 
 export const row = css`

@@ -1,86 +1,129 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css, keyframes } from "@emotion/react";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const layout = css`
-  position: relative;
   width: 100%;
-  height: 100vh; /* Adjust height to fit the viewport */
-  /* background-color: #396bf5; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+`;
+
+export const header = css`
+  width: 100%;
+  height: 20%;
+  background-color: #212842;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  text-align: center;
+
+  p {
+    font-size: 40px;
+    color: #e6d7c4;
+  }
+
+  b {
+    font-size: 43px;
+  }
 `;
 
 export const container = css`
   width: 100%;
-  height: 100%; /* Adjust height to fit the content */
-  background-color: #f5f5f5;
+  height: 100%;
+  /* background-color: #f5f5f5; */
+`;
+
+export const tagLayout = css`
+  width: 85%;
+  height: 8%;
+  margin-top: 20px;
+  /* background-color: #f5f5f5; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden; /* Ensure content does not overflow */
+  justify-content: space-around;
+  padding-left: 30px;
+  cursor: default;
+  animation: ${fadeIn} 2s ease-in-out forwards;
+  animation-delay: 1s;
+  &.visible {
+    opacity: 1;
+  }
+
+  p {
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #dbdbdb;
+    &:hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+  }
 `;
 
 export const content = css`
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: aqua; */
 `;
 
 export const text = css`
-  font-family: 'RixInooAriDuriR', sans-serif;
-  font-size: 120px; /* Adjust font-size to be responsive */
-  color: #FF7777;
+  box-sizing: border-box;
+  width: 90%;
+  height: 60%;
+  border: 3px solid #212842;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #f5f4eb;
+  cursor: default;
+`;
+
+export const text2 = css`
+  box-sizing: border-box;
+  width: 88%;
+  height: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow text to wrap within the container */
-  text-align: center;
+  cursor: default;
 
   span {
-    position: relative;
-    top: 0; /* Reset top position */
-    display: inline-block;
-    animation: bounce 1.2s ease infinite alternate;
-    text-shadow: 0 1px 0 #CCC,
-                 0 2px 0 #CCC,
-                 0 3px 0 #CCC,
-                 0 4px 0 #CCC,
-                 0 5px 0 #CCC,
-                 0 6px 0 transparent,
-                 0 7px 0 transparent,
-                 0 8px 0 transparent,
-                 0 9px 0 transparent,
-                 0 10px 10px rgba(0, 0, 0, 0.4);
+    font-size: 20px;
   }
 
-  span:nth-of-type(2) { animation-delay: 0.1s; }
-  span:nth-of-type(3) { animation-delay: 0.2s; }
-  span:nth-of-type(4) { animation-delay: 0.3s; }
-  span:nth-of-type(5) { animation-delay: 0.4s; }
-  span:nth-of-type(6) { animation-delay: 0.5s; }
-  span:nth-of-type(7) { animation-delay: 0.6s; }
-  span:nth-of-type(8) { animation-delay: 0.7s; }
+  p {
+    margin: 0;
+  }
 
-  @keyframes bounce {
-    100% {
-      top: -20px;
-      text-shadow: 0 1px 0 #CCC,
-                   0 2px 0 #CCC,
-                   0 3px 0 #CCC,
-                   0 4px 0 #CCC,
-                   0 5px 0 #CCC,
-                   0 6px 0 #CCC,
-                   0 7px 0 #CCC,
-                   0 8px 0 #CCC,
-                   0 9px 0 #CCC,
-                   0 50px 25px rgba(0, 0, 0, 0.2);
+  b {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    &:hover {
+      transform: scale(1.3);
+      background-color: white;
+      color: #007bff;
     }
   }
 `;

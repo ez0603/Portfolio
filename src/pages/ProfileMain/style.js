@@ -15,7 +15,7 @@ export const layout = css`
   width: 100%;
   height: 100%;
   padding-left: 10px;
-  /* background-color: #f5f5f5; */ 
+  /* background-color: #f5f5f5; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@ export const profileContainer = css`
 `;
 
 export const skillLayout = css`
+  margin-top: 30px;
   width: 100%;
   height: auto;
   display: flex;
@@ -47,6 +48,11 @@ export const skillLayout = css`
   animation-delay: 1s;
   &.visible {
     opacity: 1;
+  }
+
+  h1 {
+    margin-left: 35px;
+    font-size: 36px;
   }
 `;
 
