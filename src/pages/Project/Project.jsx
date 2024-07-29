@@ -21,7 +21,7 @@ function Project(props) {
 
   const TableMaidNotionClick = () => {
     window.open(
-      "https://pushy-unicorn-ed8.notion.site/832133b43b7642c9a0e1822508bf2eaa?pvs=4",
+      "https://pushy-unicorn-ed8.notion.site/Table-Maid-0c6d439b7ffc4b63a3fca24d67db99b0?pvs=4",
       "_blank"
     );
   };
