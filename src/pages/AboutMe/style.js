@@ -23,7 +23,7 @@ export const layout = css`
 
 export const header = css`
   width: 100%;
-  height: 20%;
+  height: 15%;
   background-color: #212842;
   display: flex;
   align-items: center;
@@ -48,13 +48,12 @@ export const container = css`
 
 export const tagLayout = css`
   width: 85%;
-  height: 8%;
-  margin-top: 20px;
-  /* background-color: #f5f5f5; */
+  height: 5%;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 30px;
+  padding-left: 20px;
   cursor: default;
   animation: ${fadeIn} 2s ease-in-out forwards;
   animation-delay: 1s;
@@ -84,13 +83,12 @@ export const content = css`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  /* background-color: aqua; */
 `;
 
 export const text = css`
   box-sizing: border-box;
-  width: 90%;
-  height: 60%;
+  width: 92%;
+  height: 55%;
   border: 3px solid #212842;
   display: flex;
   flex-direction: column;
@@ -99,6 +97,10 @@ export const text = css`
   border-radius: 20px;
   background-color: #f5f4eb;
   cursor: default;
+
+  b {
+    font-size: 17px;
+  }
 `;
 
 export const text2 = css`
