@@ -30,6 +30,7 @@ export const header = css`
   width: 100%;
   height: 10%;
   margin-bottom: 20px;
+  cursor: default;
 
   p {
     animation: ${bounce} 2s 3;
