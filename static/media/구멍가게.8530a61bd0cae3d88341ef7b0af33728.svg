@@ -1,0 +1,53 @@
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="z-index:1;position:relative" width="854" height="500" viewBox="0 0 854 500">
+                <style>
+                        .text {
+						font-size: 100px;
+						font-weight: 700;
+						font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+					}
+					.desc {
+						font-size: 20px;
+						font-weight: 500;
+						font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+					}
+                        
+                     </style>
+                    <defs>
+              <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#4776E6"/><stop offset="100%" stop-color="#8E54E9"/>
+              </linearGradient>
+            </defs>
+         
+    <g transform="translate(427, 250) scale(1, 1) translate(-427, -250)">
+      <path d="" fill="url(#linear)" opacity="0.4" >
+        <animate
+            attributeName="d"
+            dur="20s"
+            repeatCount="indefinite"
+            keyTimes="0;0.333;0.667;1"
+            calcmod="spline"
+            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
+            begin="0s"
+            values="M0 0L 0 420Q 213.5 460 427 430T 854 455L 854 0 Z;M0 0L 0 445Q 213.5 460 427 440T 854 430L 854 0 Z;M0 0L 0 465Q 213.5 435 427 465T 854 430L 854 0 Z;M0 0L 0 420Q 213.5 460 427 430T 854 455L 854 0 Z">
+        </animate>
+      </path>
+      <path d="" fill="url(#linear)" opacity="0.4" >
+        <animate
+          attributeName="d"
+          dur="20s"
+          repeatCount="indefinite"
+          keyTimes="0;0.333;0.667;1"
+          calcmod="spline"
+          keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
+          begin="-10s"
+          values="M0 0L 0 435Q 213.5 480 427 450T 854 460L 854 0 Z;M0 0L 0 450Q 213.5 420 427 420T 854 440L 854 0 Z;M0 0L 0 445Q 213.5 425 427 450T 854 465L 854 0 Z;M0 0L 0 435Q 213.5 480 427 450T 854 460L 854 0 Z">
+        </animate>
+      </path>
+    </g>
+                
+     
+    <text text-anchor="middle" alignment-baseline="middle" x="50%" y="50%" class="text" style="fill:#f7f5f5;" stroke="#none" stroke-width="1" >GUMEONG GAGE</text>
+                 
+            </svg>
+        
