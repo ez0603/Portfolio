@@ -9,7 +9,7 @@ function Project(props) {
   };
 
   const TableMaidGitClick = () => {
-    window.open("https://github.com/table-maid", "_blank");
+    window.open("https://github.com/table-maid/table_maid_front?tab=readme-ov-file", "_blank");
   };
 
   const GumeongGageNotionClick = () => {

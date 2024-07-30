@@ -139,3 +139,7 @@ export const icon = css`
     font-size: 15px;
   }
 `;
+export const point = css`
+background-color: yellow;
+padding: 5px;
+`;

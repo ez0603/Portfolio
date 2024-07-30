@@ -27,15 +27,15 @@ function ProfileMain(props) {
                   <div css={s.iconBox}>
                     <div css={s.icon}>
                       <img src={css} alt="" />
-                      <p>CSS3</p>
+                      <p css={s.point}>CSS3</p>
                     </div>
                     <div css={s.icon}>
                       <img src={react} alt="" />
-                      <p>REACT</p>
+                      <p css={s.point}>REACT</p>
                     </div>
                     <div css={s.icon}>
                       <img src={js} alt="" />
-                      <p>JAVASCRIPT</p>
+                      <p css={s.point}>JAVASCRIPT</p>
                     </div>
                     <div css={s.icon}>
                       <img src={html} alt="" />
@@ -50,11 +50,11 @@ function ProfileMain(props) {
                   <div css={s.iconBox}>
                     <div css={s.icon}>
                       <img src={java} alt="" />
-                      <p>JAVA</p>
+                      <p css={s.point}>JAVA</p>
                     </div>
                     <div css={s.icon}>
                       <img src={spring} alt="" />
-                      <p>SPRINGBOOT</p>
+                      <p css={s.point}>SPRINGBOOT</p>
                     </div>
                     <div css={s.icon}>
                       <img src={aws} alt="" />
